@@ -1,4 +1,4 @@
-# Gotoutine
+# Goroutine
 
 ### 併發(Concurrency)
 
