@@ -5,8 +5,6 @@ import (
 	"time"
 )
 
-var total int
-
 func main() {
 	c := make(chan string)
 
@@ -22,7 +20,6 @@ func main() {
 
 func say(text string, times int, c chan string) {
 	for i := 0; i < times; i++ {
-		total++
 		c <- fmt.Sprintf("[%03d] %s\n", i+1, text)
 		time.Sleep(time.Millisecond * 500)
 	}

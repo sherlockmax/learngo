@@ -9,8 +9,7 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	wg.Add(1)
-	wg.Add(1)
+	wg.Add(2)
 
 	go say("Hi", 10)
 	go say("Hola", 5)
